@@ -1,2 +1,6 @@
 #Some sys tricks
--alias
+alias:
+    -system
+    -network
+    -iptables
+    -symfony
