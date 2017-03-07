@@ -10,7 +10,6 @@ alias j='jobs -l'
 #NETWORK
 alias nets='netstat -tnlpv'
 
-
 #IPTABLES
 alias iptlist='sudo /sbin/iptables -L -n -v --line-numbers'
 alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
