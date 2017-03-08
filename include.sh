@@ -12,7 +12,7 @@ then
 		echo 'alias.inc already defined in .bashrc';	
 	else
 		echo 'alias.inc added in .bashrc ';	
-		echo "source ~/.alias.inc" >> ~/.bashrc
+		echo "source ~/alias.inc" >> ~/.bashrc
 	fi
 	
 	RC=`cat ~/.bashrc | grep functions.inc | wc -l `
