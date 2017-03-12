@@ -3,8 +3,8 @@
 if [[ -w ~/.bashrc ]]
 then 
 	echo "Include functions and alias in .bashrc"
-	cp -v alias.inc ~/
-	cp -v functions.inc ~/
+	cp -v alias.inc ~/.alias.inc
+	cp -v functions.inc ~/.functions.inc
 	
 	RC=`cat ~/.bashrc | grep alias.inc | wc -l` 
 	if [[ $RC -ne 0 ]]
@@ -21,7 +21,7 @@ then
                 echo 'functions.inc already defined in .bashrc';
         else
                 echo 'functions.inc added in .bashrc ';
-		echo "source ~/functions.inc" >> ~/.bashrc
+		echo "source ~/.functions.inc" >> ~/.bashrc
         fi
 
 	echo " Reload .bashrc by sourcing it : "
