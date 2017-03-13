@@ -6,4 +6,5 @@ alias:
     -symfony
 functions:
     -hash sum (md5,sha-1)
+    -ssh key exchange for passwordless ssh
 
