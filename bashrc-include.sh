@@ -9,18 +9,18 @@ then
 	RC=`cat ~/.bashrc | grep alias.inc | wc -l` 
 	if [[ $RC -ne 0 ]]
 	then
-		echo 'alias.inc already defined in .bashrc';	
+		echo 'alias already defined in .bashrc';	
 	else
-		echo 'alias.inc added in .bashrc ';	
+		echo 'alias added in .bashrc ';	
 		echo "source ~/.alias.inc" >> ~/.bashrc
 	fi
 	
 	RC=`cat ~/.bashrc | grep functions.inc | wc -l `
         if [[ $RC -ne 0 ]]
         then
-                echo 'functions.inc already defined in .bashrc';
+                echo 'functions already defined in .bashrc';
         else
-                echo 'functions.inc added in .bashrc ';
+                echo 'functions added in .bashrc ';
 		echo "source ~/.functions.inc" >> ~/.bashrc
         fi
 
