@@ -8,7 +8,7 @@ function hsum() {
 		echo "SHA-1" ; sha1sum $1 ;
 	fi
 }
-
+#SSH
 function ssh-pwdless(){
 	USNAME=`id -un`
 	TARGET_SERVER=""
@@ -61,3 +61,16 @@ function ssh-pwdless(){
 	ssh -p ${TARGET_PORT} ${TARGET_USNAME}@${TARGET_SERVER} "echo $(cat ~/.ssh/id_rsa.pub) >> .ssh/authorized_keys"; 
 	
  }
+
+#DOCKER
+function dwatch() {
+        if [ ! $# -eq 1 ]
+        then
+                echo "missing <DOCKER ID> "
+                docker ps
+		return
+        else
+                watch -n2 "docker logs $1 --tail 20"
+        fi
+}
+

@@ -7,6 +7,10 @@ alias mkdir='mkdir -pv'
 alias h='history'
 alias j='jobs -l'
 
+#DOCKER
+alias dps='docker ps'
+alias dpd='docker-compose down'
+alias dpu='docker-compose up -d'
 
 #NETWORK
 alias nets='netstat -tnlpv'
