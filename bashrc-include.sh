@@ -3,13 +3,10 @@
 if [[ -w ~/.bashrc ]]
 then 
 	echo "Include functions and alias in .bashrc"
-<<<<<<< HEAD:bashrc-include.sh
 	cp -v alias.inc ~/.alias.inc
 	cp -v functions.inc ~/.functions.inc
-=======
 	cp -v alias ~/.alias.inc
 	cp -v functions ~/.functions.inc
->>>>>>> cc668ae6b2493cee98145a3fe142489c77115196:bashrc-include.sh
 	
 	RC=`cat ~/.bashrc | grep alias.inc | wc -l` 
 	if [[ $RC -ne 0 ]]
@@ -25,11 +22,7 @@ then
         then
                 echo 'functions already defined in .bashrc';
         else
-<<<<<<< HEAD:bashrc-include.sh
-                echo 'functions.inc added in .bashrc ';
-=======
                 echo 'functions added in .bashrc ';
->>>>>>> cc668ae6b2493cee98145a3fe142489c77115196:bashrc-include.sh
 		echo "source ~/.functions.inc" >> ~/.bashrc
         fi
 
