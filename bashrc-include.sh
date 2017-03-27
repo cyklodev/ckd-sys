@@ -3,8 +3,6 @@
 if [[ -w ~/.bashrc ]]
 then 
 	echo "Include functions and alias in .bashrc"
-	cp -v alias.inc ~/.alias.inc
-	cp -v functions.inc ~/.functions.inc
 	cp -v alias ~/.alias.inc
 	cp -v functions ~/.functions.inc
 	
