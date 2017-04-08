@@ -8,9 +8,9 @@ alias h='history'
 alias j='jobs -l'
 
 #DOCKER
-alias dps='docker ps'
-alias dpd='docker-compose down'
-alias dpu='docker-compose up -d'
+alias dcs='docker ps'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up -d'
 
 #NETWORK
 alias nets='netstat -tnlpv'
