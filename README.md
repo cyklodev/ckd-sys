@@ -1,10 +1,11 @@
 #Some sys tricks
-alias:
+## Alias:
     -system
     -network
     -iptables
     -symfony
-functions:
+## Functions:
     -hash sum (md5,sha-1)
     -ssh key exchange for passwordless ssh
-
+    -docker logs
+    -docker exec
