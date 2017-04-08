@@ -74,3 +74,14 @@ function dwatch() {
         fi
 }
 
+function dexec() {
+        if [ ! $# -eq 1 ]
+        then
+                echo "missing <DOCKER ID> "
+                docker ps
+                return
+        else
+                docker exec -ti $1 bash 
+        fi
+}
+
