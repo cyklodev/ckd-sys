@@ -1,4 +1,4 @@
-#Some sys tricks
+# Some sys tricks
 ## Alias:
     -system
     -network
