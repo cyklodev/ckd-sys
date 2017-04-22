@@ -73,15 +73,25 @@ function dwatch() {
                 watch -n2 "docker logs $1 --tail 20"
         fi
 }
-
-function dexec() {
+function dlogs() {
         if [ ! $# -eq 1 ]
         then
                 echo "missing <DOCKER ID> "
                 docker ps
                 return
         else
-                docker exec -ti $1 bash 
+                docker logs $1 
+        fi
+}
+
+function dexec() {
+        if [ $# -lt 2 ]
+        then
+                echo "missing <DOCKER ID> <COMMAND>"
+                docker ps
+                return
+	else
+                docker exec -ti $1 $2  
         fi
 }
 
