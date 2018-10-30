@@ -1,11 +1,23 @@
 # Some sys tricks
-## Alias:
+
+# Installation
+
+Include wanted alias file in /etc/profile.d/
+```bash
+cp ALIASFILE /etc/profile.d/
+```
+## Linux agnostic:
     -system
     -network
+    -git
     -iptables
-    -symfony
-## Functions:
-    -hash sum (md5,sha-1)
-    -ssh key exchange for passwordless ssh
-    -docker logs
-    -docker exec
+    -ssh
+
+## Centos:
+    -yum
+
+## Services:
+    -nginx
+    -php72
+    -icinga2
+    -docker
