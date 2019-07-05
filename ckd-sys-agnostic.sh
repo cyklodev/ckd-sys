@@ -9,6 +9,17 @@ alias h='history'
 alias j='jobs -l'
 alias sbin='cd /usr/local/sbin'
 alias vcron='vi /etc/crontab'
+alias swd='watch -n1 df -m'
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+
+#NETWORK
+alias nets='netstat -tnlpv'
+alias swn='watch -n1 netstat -tnlpv'
+alias pingg='ping -n 1 8.8.8.8'
+alias pingf='ping -n 1 free.fr'
+alias swn='watch -n1 netstat -tnlpv'
+
+#history
 function hg(){
 	history | grep $1
 }
@@ -23,19 +34,19 @@ function hsum() {
 	fi
 }
 
-#NETWORK
-alias nets='netstat -tnlpv'
-
 #GIT
 alias gc='git commit -m'
-alias g.='git add .'
-alias gph='git push -u origin'
+alias g.='git add . -A'
+alias g.c='git add . -A && gc'
+alias gph='git push origin'
 alias gs='git status'
 alias gba='git branch -a'
 alias gcout='git checkout'
 alias glog='git log --stat --pretty=short --graph'
 alias gdu='git diff @{upstream}'
 alias glr='git remote -v'
+alias glt='git tag'
+alias gfd='git fetch --dry-run'
 
 
 #IPTABLES
@@ -43,6 +54,7 @@ alias iptlist='iptables -L -n -v --line-numbers'
 alias iptlistin='iptables -L INPUT -n -v --line-numbers'
 alias iptlistout='iptables -L OUTPUT -n -v --line-numbers'
 alias iptlistfw='iptables -L FORWARD -n -v --line-numbers'
+alias iptrestore='iptables-restore < /etc/sysconfig/iptables'
 
 #SSH
 function ssh-pwdless(){
