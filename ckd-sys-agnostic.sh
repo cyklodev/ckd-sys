@@ -15,8 +15,8 @@ alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-ti
 #NETWORK
 alias nets='netstat -tnlpv'
 alias swn='watch -n1 netstat -tnlpv'
-alias pingg='ping -n 1 8.8.8.8'
-alias pingf='ping -n 1 free.fr'
+alias pingg='ping -c 1 8.8.8.8'
+alias pingf='ping -c 1 free.fr'
 alias swn='watch -n1 netstat -tnlpv'
 
 #history
